@@ -1,2 +1,105 @@
-<P>Hello 迪亚</P>
-<p>我是你爸爸</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <style>
+        /* 重置浏览器默认样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 设置全局字体和背景 */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* 页面主体容器 */
+        .container {
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 40px 50px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* 子标题样式 */
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #ff9a8b;
+        }
+
+        /* 内容段落样式 */
+        p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* 按钮样式 */
+        .cta-button {
+            display: inline-block;
+            background-color: #ff9a8b;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* 按钮悬停效果 */
+        .cta-button:hover {
+            background-color: #ff6f61;
+            transform: translateY(-3px);
+        }
+
+        /* 页脚样式 */
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #fff;
+        }
+
+        footer a {
+            color: #ff9a8b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎来到我的个人主页</h1>
+        <h2>我是一个 Web 开发者</h2>
+        <p>我热衷于创造用户友好的界面和流畅的网页体验，帮助人们更好地使用网络。我有多年的开发经验，精通前端和后端技术。</p>
+        <a href="#" class="cta-button">了解更多</a>
+    </div>
+
+    <footer>
+        <p>© 2025 我的个人主页 | <a href="#">隐私政策</a></p>
+    </footer>
+</body>
+</html>

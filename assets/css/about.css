@@ -1,0 +1,84 @@
+/* 重置浏览器默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 设置全局字体和背景 */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* 页面主体容器 */
+.container {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 40px 50px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 标题样式 */
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* 子标题样式 */
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #ff9a8b;
+}
+
+/* 内容段落样式 */
+p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* 按钮样式 */
+.cta-button {
+    display: inline-block;
+    background-color: #ff9a8b;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* 按钮悬停效果 */
+.cta-button:hover {
+    background-color: #ff6f61;
+    transform: translateY(-3px);
+}
+
+/* 页脚样式 */
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+footer a {
+    color: #ff9a8b;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

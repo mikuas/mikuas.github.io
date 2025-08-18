@@ -1,105 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页</title>
-    <style>
-        /* 重置浏览器默认样式 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* 设置全局字体和背景 */
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: #fff;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        /* 页面主体容器 */
-        .container {
-            background-color: rgba(0, 0, 0, 0.3);
-            border-radius: 15px;
-            padding: 40px 50px;
-            width: 80%;
-            max-width: 600px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        /* 标题样式 */
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-
-        /* 子标题样式 */
-        h2 {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            color: #ff9a8b;
-        }
-
-        /* 内容段落样式 */
-        p {
-            font-size: 1.1em;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-
-        /* 按钮样式 */
-        .cta-button {
-            display: inline-block;
-            background-color: #ff9a8b;
-            color: white;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            border-radius: 25px;
-            text-decoration: none;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        /* 按钮悬停效果 */
-        .cta-button:hover {
-            background-color: #ff6f61;
-            transform: translateY(-3px);
-        }
-
-        /* 页脚样式 */
-        footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #fff;
-        }
-
-        footer a {
-            color: #ff9a8b;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/index.css" , type="text/css">
 </head>
-<body>
-    <div class="container">
-        <h1>欢迎来到我的个人主页</h1>
-        <h2>我是一个 Web 开发者</h2>
-        <p>我热衷于创造用户友好的界面和流畅的网页体验，帮助人们更好地使用网络。我有多年的开发经验，精通前端和后端技术。</p>
-        <a href="#" class="cta-button">了解更多</a>
-    </div>
 
-    <footer>
-        <p>© 2025 我的个人主页 | <a href="#">隐私政策</a></p>
-    </footer>
+<body>
+    <div>
+        <!-- header -->
+        <div class="header">
+            <div class="wrapper">
+
+                <!-- logo -->
+                <div class="logo">
+                    <h1>
+                        <a href="javascript:void(0)" class="logo">HTML</a>
+                    </h1>
+                </div>
+
+                <!-- nav -->
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)" class="home">首页</a>
+                        </li>
+                        <li>
+                            <a href="https://bilibili.com">课程</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" id="messageInfo">职业规划</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- search -->
+                <div class="search">
+                    <input type="text" placeholder="请输入关键字" id="search">
+                    <label for="search"></label>
+                    <a href="javascript:void(0)" class="search_a"></a>
+                </div>
+
+                <!-- users -->
+                <div class="users">
+                    <a href="">
+                        <img src="./assets/images/jingliu.jpg" alt="">
+                    </a>
+                    <span>Welcome</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- banner -->
+        <div class="banner">
+            <div class="wrapper">
+
+                <!-- left -->
+                <div class="left">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">HOME</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">HTML</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">CSS</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">JavaScript</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Vue</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Python</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Java</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">C#</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">TypeScript</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- right -->
+                <div class="right">
+                    <h3 class="weight">我的课程</h3>
+                    <div class="content">
+                        <dl>
+                            <dt>数据可视化课程</dt>
+                            <dd>
+                                <span>正在学习</span>-<strong>echarts</strong>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>数据可视化课程</dt>
+                            <dd>
+                                <span>正在学习</span>-<strong>echarts</strong>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>数据可视化课程</dt>
+                            <dd>
+                                <span>正在学习</span>-<strong>echarts</strong>
+                            </dd>
+                        </dl>
+                        <a href="">全部课程</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 精品推荐 -->
+        <div class="recommend wrapper">
+            <h3>Download</h3>
+            <ul>
+                <li><a href="javascript:void(0)">HTML</a></li>
+                <li><a href="javascript:void(0)">CSS</a></li>
+                <li><a href="javascript:void(0)">JavaScript</a></li>
+                <li><a href="javascript:void(0)">Python</a></li>
+                <li><a href="javascript:void(0)">Java</a></li>
+                <li><a href="javascript:void(0)">C#</a></li>
+                <li><a href="javascript:void(0)">TypeScript</a></li>
+                <li><a href="javascript:void(0)">React</a></li>
+                <li><a href="javascript:void(0)">Node</a></li>
+            </ul>
+            <a href="javascript:void(0)" class="right_a">修改兴趣</a>
+        </div>
+
+        <!-- course -->
+        <div class="course wrapper">
+            <!-- title -->
+            <div class="title">
+                <h3>精品推荐</h3>
+                <a href="javascript:void(0)" class="more">查看全部</a>
+            </div>
+            <!-- body -->
+            <div class="bd">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/course01.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>JavaScript数据看板项目实战</h3>
+                                <p><span>高级</span> . <i>1919</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/course02.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Vue.js实战面经全段项目</h3>
+                                <p><span>高级</span> . <i>4514</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/course03.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Vue.js实战iHRM人资项目</h3>
+                                <p><span>高级</span> . <i>721</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/course04.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Vue.js实战就医问诊项目</h3>
+                                <p><span>高级</span> . <i>1024</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/course05.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>小程序实战小兔鲜电商项目</h3>
+                                <p><span>高级</span> . <i>666</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/course06.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>前端Flutter开发实战易学易用框架</h3>
+                                <p><span>高级</span> . <i>653</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/course07.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>React.js项目实战极客园H5(用户端)</h3>
+                                <p><span>高级</span> . <i>999</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/course08.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>React.js项目实战极客园PC端</h3>
+                                <p><span>高级</span> . <i>445</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/course09.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>企业高频使用前端必备</h3>
+                                <p><span>高级</span> . <i>1145</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/course10.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Node.js教程基础+6大实战案例</h3>
+                                <p><span>高级</span> . <i>789</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <!-- title -->
+            <div class="title">
+                <h3>前端开发工程师</h3>
+                <ul>
+                    <li><a href="javascript:void(0)" class="active">热门课程</a></li>
+                    <li><a href="javascript:void(0)">初级课程</a></li>
+                    <li><a href="javascript:void(0)">中级课程</a></li>
+                    <li><a href="javascript:void(0)">高级课程</a></li>
+                </ul>
+                <a href="javascript:void(0)" class="more">查看全部</a>
+            </div>
+
+            <div class="bd">
+                <div class="left">
+                    <img src="./assets/images/web_left.png" alt="">
+                </div>
+                <div class="right">
+                    <img src="./assets/images/web_top.png" alt="">
+
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="images">
+                                        <img src="./assets/images/web01.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h3>JavaScript数据看板项目实战</h3>
+                                        <p><span>高级</span> . <i>1919</i>人在学习</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="images">
+                                        <img src="./assets/images/web02.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h3>Vue.js实战面经全段项目</h3>
+                                        <p><span>高级</span> . <i>4514</i>人在学习</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="images">
+                                        <img src="./assets/images/web03.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h3>Vue.js实战iHRM人资项目</h3>
+                                        <p><span>高级</span> . <i>721</i>人在学习</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="images">
+                                        <img src="./assets/images/web04.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h3>Vue.js实战就医问诊项目</h3>
+                                        <p><span>高级</span> . <i>1024</i>人在学习</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <!-- title -->
+            <div class="title">
+                <h3>Python+大数据开发</h3>
+                <ul>
+                    <li><a href="javascript:void(0)" class="active">热门课程</a></li>
+                    <li><a href="javascript:void(0)">初级课程</a></li>
+                    <li><a href="javascript:void(0)">中级课程</a></li>
+                    <li><a href="javascript:void(0)">高级课程</a></li>
+                </ul>
+                <a href="javascript:void(0)" class="more">查看全部</a>
+            </div>
+
+            <div class="bd">
+                <div class="left">
+                    <img src="./assets/images/python_left.png" alt="">
+                </div>
+                <div class="right">
+                    <img src="./assets/images/python_top.png" alt="">
+
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="images">
+                                        <img src="./assets/images/python01.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h3>JavaScript数据看板项目实战</h3>
+                                        <p><span>高级</span> . <i>1919</i>人在学习</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="images">
+                                        <img src="./assets/images/python02.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h3>Vue.js实战面经全段项目</h3>
+                                        <p><span>高级</span> . <i>4514</i>人在学习</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="images">
+                                        <img src="./assets/images/python03.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h3>Vue.js实战iHRM人资项目</h3>
+                                        <p><span>高级</span> . <i>721</i>人在学习</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="images">
+                                        <img src="./assets/images/python04.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h3>Vue.js实战就医问诊项目</h3>
+                                        <p><span>高级</span> . <i>1024</i>人在学习</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ai -->
+        <div class="course wrapper">
+            <!-- title -->
+            <div class="title">
+                <h3>人工智能开发</h3>
+                <ul>
+                    <li><a href="javascript:void(0)" class="active">热门课程</a></li>
+                    <li><a href="javascript:void(0)">初级课程</a></li>
+                    <li><a href="javascript:void(0)">中级课程</a></li>
+                    <li><a href="javascript:void(0)">高级课程</a></li>
+                </ul>
+                <a href="javascript:void(0)" class="more">查看全部</a>
+            </div>
+            <!-- body -->
+            <div class="ele_two">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/ai01.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>JavaScript数据看板项目实战</h3>
+                                <p><span>高级</span> . <i>1919</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/ai02.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Vue.js实战面经全段项目</h3>
+                                <p><span>高级</span> . <i>4514</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/ai03.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Vue.js实战iHRM人资项目</h3>
+                                <p><span>高级</span> . <i>721</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/ai06.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Vue.js实战就医问诊项目</h3>
+                                <p><span>高级</span> . <i>1024</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/ai05.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>小程序实战小兔鲜电商项目</h3>
+                                <p><span>高级</span> . <i>666</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- javaEE -->
+        <div class="course wrapper">
+            <!-- title -->
+            <div class="title">
+                <h3>JavaEE</h3>
+                <ul>
+                    <li><a href="javascript:void(0)" class="active">热门课程</a></li>
+                    <li><a href="javascript:void(0)">初级课程</a></li>
+                    <li><a href="javascript:void(0)">中级课程</a></li>
+                    <li><a href="javascript:void(0)">高级课程</a></li>
+                </ul>
+                <a href="javascript:void(0)" class="more">查看全部</a>
+            </div>
+            <!-- body -->
+            <div class="ele_two">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/java02.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>JavaScript数据看板项目实战</h3>
+                                <p><span>高级</span> . <i>1919</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/java04.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Vue.js实战面经全段项目</h3>
+                                <p><span>高级</span> . <i>4514</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/java03.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Vue.js实战iHRM人资项目</h3>
+                                <p><span>高级</span> . <i>721</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/java05.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Vue.js实战就医问诊项目</h3>
+                                <p><span>高级</span> . <i>1024</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div class="images">
+                                <img src="./assets/images/java04.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>小程序实战小兔鲜电商项目</h3>
+                                <p><span>高级</span> . <i>666</i>人在学习</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- bottom -->
+        <div id="bottom">
+            <div class="wrapper">
+                <div class="left">
+                    <img src="./assets/images/logo.png" alt="">
+                    <p>学成在线致力于普及中国最好的教育。它与中国一流大学和机构合作，提供在线课程。<br>
+                        © 2017年 XTGG Inc.
+                        保留所有权利。-沪ICP备114514号</p>
+                    <a href="javascript:void(0)" class="download">下载APP</a>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                            <h3>关于学成网</h3>
+                            <a href="javascript:void(0)">关于</a>
+                            <a href="javascript:void(0)">管理团队</a>
+                            <a href="javascript:void(0)">工作机会</a>
+                            <a href="javascript:void(0)">工作机会</a>
+                            <a href="javascript:void(0)">帮助</a>
+                        </li>
+
+                        <li>
+                            <h3>新手指南</h3>
+                            <a href="javascript:void(0)">如何注册</a>
+                            <a href="javascript:void(0)">如何选课</a>
+                            <a href="javascript:void(0)">如何拿到毕业证</a>
+                            <a href="javascript:void(0)">学分是什么</a>
+                            <a href="javascript:void(0)">考试未通过怎么办</a>
+                        </li>
+
+                        <li>
+                            <h3>合作伙伴</h3>
+                            <a href="javascript:void(0)">合作机构</a>
+                            <a href="javascript:void(0)">合作导师</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+    let download = document.querySelector(".download")
+    download.addEventListener("click", function () {
+        window.location.href = "about.html" 
+    })
+</script>
+
 </html>

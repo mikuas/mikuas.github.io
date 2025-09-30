@@ -24,8 +24,10 @@ const languages = [
 
 // 根据配置文件的语言设置获取默认翻译语言
 const defaultTranslateLanguage = getTranslateLanguageFromConfig(
-	siteConfig.lang,
+    "chinese_simplified"
+	// siteConfig.lang,
 );
+
 
 function togglePanel() {
 	isOpen = !isOpen;

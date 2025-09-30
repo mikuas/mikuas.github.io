@@ -31,6 +31,10 @@ export default defineConfig({
 
 	base: "/",
 	trailingSlash: "always",
+
+	build: {
+    	relative: true,
+  	},
 	integrations: [
 		tailwind({
 			nesting: true,

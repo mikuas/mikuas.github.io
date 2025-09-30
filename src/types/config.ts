@@ -5,17 +5,18 @@ export type SiteConfig = {
 	subtitle: string;
 	keywords?: string[]; // 站点关键词，用于生成 <meta name="keywords">
 
-	lang:
-		| "en"
-		| "zh_CN"
-		| "zh_TW"
-		| "ja"
-		| "ko"
-		| "es"
-		| "th"
-		| "vi"
-		| "tr"
-		| "id";
+	// lang:
+	// 	| "zh_CN"
+	// 	| "en"
+	// 	| "zh_TW"
+	// 	| "ja"
+	// 	| "ko"
+	// 	| "es"
+	// 	| "th"
+	// 	| "vi"
+	// 	| "tr"
+	// 	| "id";
+	lang: "zh_CN"
 
 	themeColor: {
 		hue: number;

@@ -20,6 +20,7 @@ import { getTranslateLanguageFromConfig } from "./utils/language-utils";
 // 定义站点语言
 const SITE_LANG = "zh-CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 
+// @ts-ignore
 export const siteConfig: SiteConfig = {
 	title: "Mikuas",
 	subtitle: "",
@@ -40,7 +41,7 @@ export const siteConfig: SiteConfig = {
 
 	translate: {
 		// enable: true, // 启用翻译功能
-		service: "client.edge", // 使用 Edge 浏览器翻译服务
+		// service: "client.edge", // 使用 Edge 浏览器翻译服务
 		defaultLanguage: getTranslateLanguageFromConfig(SITE_LANG), // 根据站点语言自动设置默认翻译语言
 		showSelectTag: false, // 不显示默认语言选择下拉菜单，使用自定义按钮
 		autoDiscriminate: true, // 自动检测用户语言
@@ -54,8 +55,6 @@ export const siteConfig: SiteConfig = {
 	anime: {
 		mode: "local", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置
 	},
-	lang: SITE_LANG,
-
 	banner: {
 		enable: true, // 是否启动Banner壁纸模式
 
@@ -154,6 +153,7 @@ export const siteConfig: SiteConfig = {
 		}
 	},
 	showLastModified: true,
+	lang: SITE_LANG,
 };
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	enable: true, // 启用全屏壁纸功能,非Banner模式下生效

@@ -29,7 +29,7 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 export default defineConfig({
 	site: "https://mikuas.github.io/",
 
-	base: "/",
+	base: "/blog",
 	trailingSlash: "always",
 
 	build: {
